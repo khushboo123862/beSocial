@@ -110,12 +110,86 @@ if( isset($_POST['loginbtn']) ){
     <link rel="stylesheet" href="css/style.css">
 
     <style>
+
+
+body {
+    background: linear-gradient(135deg, #ffe6e6, #fff5f5);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Login Card */
+.intro-form {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.intro-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Title */
+.intro-form h3 {
+    font-weight: 600;
+    color: #ff4d4d;
+    margin-bottom: 25px;
+}
+
+/* Input Fields */
+.form-control {
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.form-control:focus {
+    border-color: #ff4d4d;
+    box-shadow: 0 0 8px rgba(255,77,77,0.3);
+}
+
+
+/* Checkbox */
+.form-check-label {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Forgot Password */
+a {
+    color: #ff4d4d;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Login Button */
+.lab-btn {
+  border-radius:25px !important; 
+    background: #5dade2 !important; 
+    border: none !important;
+    font-weight: bold;
+    height:40px;
+    align-items:center;
+}
+
+.lab-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
+}
         /* Purane style ko replace karne ke liye */
 .intro-form-inner {
-    border: none !important; /* Square border hatane ke liye */
-    background: rgba(255, 255, 255, 0.8); /* Soft background */
-    border-radius: 50px; /* Isse corners bilkul round ho jayenge */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Bina border ke depth dene ke liye halki shadow */
+    border: none !important; 
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     padding: 40px;
 }
 
@@ -153,6 +227,8 @@ if( isset($_POST['loginbtn']) ){
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
 }
+
+
     </style>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>TuruLav</title>
