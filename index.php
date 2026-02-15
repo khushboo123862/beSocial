@@ -792,7 +792,7 @@ a:hover {
                                     <div class="fm-item-widget lab-item">
                                         <div class="lab-inner">
                                             <div class="lab-thumb">
-                                                <a href="index.html#"><img src="images/02(7).jpg" alt="footer-widget-img"></a>
+                                                <a href="index.html#"><img src="images/03(7).jpg" alt="footer-widget-img"></a>
                                             </div>
                                             <div class="lab-content">
                                                 <h6><a href="blog-single.html">Dynamca Network Otuitive Catays For
