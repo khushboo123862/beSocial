@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -14,8 +15,144 @@
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <style>
+
+
+body {
+    background: linear-gradient(135deg, #ffe6e6, #fff5f5);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Login Card */
+.intro-form {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.intro-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Title */
+.intro-form h3 {
+    font-weight: 600;
+    color: #ff4d4d;
+    margin-bottom: 25px;
+}
+
+/* Input Fields */
+.form-control {
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.form-control:focus {
+    border-color: #ff4d4d;
+    box-shadow: 0 0 8px rgba(255,77,77,0.3);
+}
+
+
+/* Checkbox */
+.form-check-label {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Forgot Password */
+a {
+    color: #ff4d4d;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Login Button */
+.lab-btn {
+  border-radius:25px !important; 
+    background: #5dade2 !important; 
+    border: none !important;
+    font-weight: bold;
+    height:40px;
+    align-items:center;
+}
+
+.lab-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
+}
+        /* Purane style ko replace karne ke liye */
+.intro-form-inner {
+    border: none !important; 
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+}
+
+/* Heading Style */
+.banner-content h3 {
+    color: #2d3436;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Input Fields Styling */
+.city input {
+    border: none !important;
+    border-radius: 30px !important; /* Round corners */
+    background-color: #f0f2f5 !important; /* Light grey background */
+    padding: 10px 20px !important;
+    margin-bottom: 15px;
+}
+
+.city input:focus {
+    border-color: #6c5ce7 !important;
+    box-shadow: 0 0 10px rgba(108, 92, 231, 0.2) !important;
+}
+
+/* Button Styling */
+.btn-primary.btn-block {
+    border-radius: 30px !important; 
+    background: #5dade2 !important; 
+    border: none !important;
+    font-weight: bold;
+}
+.btn-primary.btn-block:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
+}
+
+
+    </style>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>TuruLav</title>
+	 <script type="text/javascript">  
+        (function () {  
+            'use strict';  
+            window.addEventListener('load', function () {  
+                var form = document.getElementById('needs-validation');  
+                form.addEventListener('submit', function (event) {  
+                    if (form.checkValidity() === false) {  
+                        event.preventDefault();  
+                        event.stopPropagation();  
+                    }  
+                    form.classList.add('was-validated');  
+                }, false);  
+            }, false);  
+        })();  
+    </script>  
 </head>
 
 <body>
@@ -40,26 +177,13 @@
                 <div class="header-wrapper">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="images/logo.png" alt="logo">
+                            <img src="images/" alt=>
                         </a>
                     </div>
                     <div class="menu-area">
                         <ul class="menu">
                             <li>
                                 <a href="index.html">Home</a>
-                            </li>
-
-                            <li class="menu-item-has-children">
-                                <a href="index.html#0">Features</a>
-                                <ul class="submenu">
-                                    <li><a href="members.html">All Members</a></li>
-                                    <li><a href="profile.html">Member Profile</a></li>
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="signup.html">Sign Up</a></li>
-                                    <li><a href="pricing-plan.html">Pricing Plan</a></li>
-                                    <li><a href="404.html">404 Page</a></li>
-
-                                </ul>
                             </li>
                             <li>
                                 <a href="active-group.html">Community</a>
@@ -96,31 +220,40 @@
     <!-- ================ Banner Section start Here =============== -->
     <section class="banner-section">
         <div class="container">
+			<div class="row">
+				<div class="col-md-12"><p><?php echo $msg; ?></p></div>
+			</div>
             <div class="section-wrapper">
-                <div class="row align-items-end">
+                <div class="row">
                     <div class="col-lg-5">
                         <div class="banner-content">
                             <div class="intro-form">
                                 <div class="account-wrapper">
 									<h3 class="title">Login</h3>
-									<form class="account-form">
+									<form class="account-form" action="" method="post"id="needs-validation" novalidate>
 										<div class="form-group">
-											<input type="text" placeholder="User Name" name="username">
+											<input type="text" placeholder="Mobile Number" name="mob"  class="form-control" aria-describedby="inputGroupPrepend" required pattern="[0-9]{10}">
+											<div class="invalid-feedback">  
+                                            Please enter Mobile.  
+											</div>
 										</div>
 										<div class="form-group">
-											<input type="password" placeholder="Password" name="password">
+											<input type="password" placeholder="Password" name="pwd" class="form-control" aria-describedby="inputGroupPrepend" required>
+											<div class="invalid-feedback">  
+                                            Please enter Password.  
+											</div>
 										</div>
 										<div class="form-group">
 											<div class="d-flex justify-content-between flex-wrap pt-sm-2">
 												<div class="checkgroup">
-													<input type="checkbox" name="remember" id="remember">
+													<input type="checkbox" name="rememberme" id="rememberme" value="11">
 													<label for="remember">Remember Me</label>
 												</div>
 												<a href="#">Forget Password?</a>
 											</div>
 										</div>
 										<div class="form-group">
-											<button class="d-block lab-btn"><span>Submit Now</span></button>
+											<input type="submit" class="d-block lab-btn" value="LOGIN" name="loginbtn">
 										</div>
 									</form>
 								</div>
@@ -131,8 +264,8 @@
                     <div class="col-lg-5">
                         <div class="banner-content">
                             <div class="intro-form" style="background:rgb(237 197 210 / 60%);">
-                                <div class="intro-form-inner">
-                                    <h3>Sign Up TuruLav</h3>
+                                <div class="intro-form-inner text-center">
+									<h3>Sign Up </h3>
                                     <form action="" method="post" class="banner-form">
                                         <div class="gender">
                                             <label for="gender" class="left">I am a </label>
@@ -149,19 +282,19 @@
 												</div>
                                             </div>
                                         </div>
-                                   
+										<div class="city">
+                                            <label for="name" class="left">Name</label>
+                                            <input class="right" type="text" name="unm" id="unm" placeholder="Your Name">
+                                        </div>
                                         <div class="city">
                                             <label for="city" class="left">City</label>
                                             <input class="right" type="text" name="city" id="city" placeholder="Your City Name..">
                                         </div>
 										<div class="city">
                                             <label for="name" class="left">Mobile</label>
-                                            <input class="right" type="text" name="mob" id="mobile" placeholder="Mobile Number">
+                                            <input class="right" type="text" name="mobile" id="mobile" placeholder="Mobile Number">
                                         </div>
-										<div class="city">
-                                            <label for="name" class="left">Name</label>
-                                            <input class="right" type="text" name="unm" id="unm" placeholder="Your Name">
-                                        </div>
+										
 										<div class="city">
                                             <label for="name" class="left">Password</label>
                                             <input class="right" type="password" id="pwd" name="pwd" placeholder="Choose Password">
@@ -171,7 +304,7 @@
                                     </form>
                                     
                                 </div>
-                            </div>
+                            </div>	
                         </div>
                     </div>
                 </div>
@@ -204,7 +337,7 @@
                         <div class="lab-item member-item style-1">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="images/01.jpg" alt="member-img">
+                                    <img src="images/pp.avif" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Andrea Guido</a> </h6>
@@ -217,7 +350,7 @@
                         <div class="lab-item member-item style-1">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="images/02.jpg" alt="member-img">
+                                    <img src="images/male.webp" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Gihan-Fernando</a></h6>
@@ -230,7 +363,7 @@
                         <div class="lab-item member-item style-1">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="images/03.jpg" alt="member-img">
+                                    <img src="images/ff.jpg" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Sweet Admin</a></h6>
@@ -243,7 +376,7 @@
                         <div class="lab-item member-item style-1">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="images/04.jpg" alt="member-img">
+                                    <img src="images/oo.jpg" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Gyan-Baffour</a></h6>
@@ -256,7 +389,7 @@
                         <div class="lab-item member-item style-1">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="images/05.jpg" alt="member-img">
+                                    <img src="images/fa.jpg" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Teszt Eleking</a></h6>
@@ -269,7 +402,7 @@
                         <div class="lab-item member-item style-1">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="images/06.jpg" alt="member-img">
+                                    <img src="images/s.jpg" alt="member-img">
                                 </div>
                                 <div class="lab-content">
                                     <h6><a href="profile.html">Zeahra Guido</a>
@@ -366,7 +499,7 @@
         <div class="container">
             <div class="section-header">
                 <h4>Recently Active Groups</h4>
-                <h2>Turulav 4 Best Active Group</h2>
+                <h2>beSocial coupale Best Active Group</h2>
             </div>
             <div class="section-wrapper">
                 <div class="row g-4">
@@ -374,21 +507,13 @@
                         <div class="group-item lab-item">
                             <div class="lab-inner d-flex flex-wrap align-items-center p-4">
                                 <div class="lab-thumb me-sm-4 mb-4 mb-sm-0">
-                                    <img src="images/01(5).jpg" alt="img">
+                                    <img src="images/c.jpg" alt="img">
                                 </div>
-                                <div class="lab-content">
+                                <div class="lab-content text-center">
                                     <h4>Active Group A1</h4>
                                     <p>Colabors atively fabcate best breed and
                                         apcations through visionary value </p>
-                                    <ul class="img-stack d-flex">
-                                        <li><img src="images/01(6).png" alt="member-img"></li>
-                                        <li><img src="images/02(4).png" alt="member-img"></li>
-                                        <li><img src="images/03(4).png" alt="member-img"></li>
-                                        <li><img src="images/04(2).png" alt="member-img"></li>
-                                        <li><img src="images/05(1).png" alt="member-img"></li>
-                                        <li><img src="images/06(1).png" alt="member-img"></li>
-                                        <li class="bg-theme">12+</li>
-                                    </ul>
+                                  
                                     <div class="test"> <a href="active-group.html" class="lab-btn"> <i class="icofont-users-alt-5"></i>View Group</a></div>
                                 </div>
                             </div>
@@ -398,21 +523,13 @@
                         <div class="group-item lab-item">
                             <div class="lab-inner d-flex flex-wrap align-items-center p-4">
                                 <div class="lab-thumb me-sm-4 mb-4 mb-sm-0">
-                                    <img src="images/02(5).jpg" alt="img">
+                                    <img src="images/OIP.webp" alt="img">
                                 </div>
-                                <div class="lab-content">
+                                <div class="lab-content text-center">
                                     <h4>Active Group A2</h4>
                                     <p>Colabors atively fabcate best breed and
                                         apcations through visionary value </p>
-                                    <ul class="img-stack d-flex">
-                                        <li><img src="images/01(6).png" alt="member-img"></li>
-                                        <li><img src="images/02(4).png" alt="member-img"></li>
-                                        <li><img src="images/03(4).png" alt="member-img"></li>
-                                        <li><img src="images/04(2).png" alt="member-img"></li>
-                                        <li><img src="images/05(1).png" alt="member-img"></li>
-                                        <li><img src="images/06(1).png" alt="member-img"></li>
-                                        <li class="bg-theme">12+</li>
-                                    </ul>
+                                  
                                     <div class="test"> <a href="active-group.html" class="lab-btn"> <i class="icofont-users-alt-5"></i>View Group</a></div>
                                 </div>
                             </div>
@@ -422,21 +539,13 @@
                         <div class="group-item lab-item">
                             <div class="lab-inner d-flex flex-wrap align-items-center p-4">
                                 <div class="lab-thumb me-sm-4 mb-4 mb-sm-0">
-                                    <img src="images/03(5).jpg" alt="img">
+                                    <img src="images/o.jpg" alt="img">
                                 </div>
-                                <div class="lab-content">
+                                <div class="lab-content text-center">
                                     <h4>Active Group A3</h4>
                                     <p>Colabors atively fabcate best breed and
                                         apcations through visionary value </p>
-                                    <ul class="img-stack d-flex">
-                                        <li><img src="images/01(6).png" alt="member-img"></li>
-                                        <li><img src="images/02(4).png" alt="member-img"></li>
-                                        <li><img src="images/03(4).png" alt="member-img"></li>
-                                        <li><img src="images/04(2).png" alt="member-img"></li>
-                                        <li><img src="images/05(1).png" alt="member-img"></li>
-                                        <li><img src="images/06(1).png" alt="member-img"></li>
-                                        <li class="bg-theme">12+</li>
-                                    </ul>
+                                   
                                     <div class="test"> <a href="active-group.html" class="lab-btn"> <i class="icofont-users-alt-5"></i>View Group</a></div>
                                 </div>
                             </div>
@@ -446,21 +555,12 @@
                         <div class="group-item lab-item">
                             <div class="lab-inner d-flex flex-wrap align-items-center p-4">
                                 <div class="lab-thumb me-sm-4 mb-4 mb-sm-0">
-                                    <img src="images/04(3).jpg" alt="img">
+                                    <img src="images/u.jpg" alt="img">
                                 </div>
-                                <div class="lab-content">
+                                <div class="lab-content text-center">
                                     <h4>Active Group A4</h4>
                                     <p>Colabors atively fabcate best breed and
                                         apcations through visionary value </p>
-                                    <ul class="img-stack d-flex">
-                                        <li><img src="images/01(6).png" alt="member-img"></li>
-                                        <li><img src="images/02(4).png" alt="member-img"></li>
-                                        <li><img src="images/03(4).png" alt="member-img"></li>
-                                        <li><img src="images/04(2).png" alt="member-img"></li>
-                                        <li><img src="images/05(1).png" alt="member-img"></li>
-                                        <li><img src="images/06(1).png" alt="member-img"></li>
-                                        <li class="bg-theme">12+</li>
-                                    </ul>
                                     <div class="test"> <a href="active-group.html" class="lab-btn"> <i class="icofont-users-alt-5"></i>View Group</a></div>
                                 </div>
                             </div>
